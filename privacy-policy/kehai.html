@@ -77,6 +77,12 @@ has run out of power is not mistaken for a person who has stopped responding.
 <b>Device type</b>: Whether the phone is an iPhone or an Android device, because
 the two can detect different things and the app states which.
 </li>
+<li>
+<b>Subscription status</b>: Whether you have an active Premium subscription,
+managed via RevenueCat. Payment details (card numbers, billing address) are
+handled directly by Apple's App Store or Google Play and are never received by
+Kehai or RevenueCat.
+</li>
 </ul>
 
 <p>
@@ -132,6 +138,12 @@ them. Data is stored on Google's servers in the Tokyo region
 <li>
 <b>Sign in with Apple / Google Sign-In</b>: Used for authentication only. We
 receive a user identifier and, where you have chosen to share it, a name.
+</li>
+<li>
+<b>RevenueCat</b>: Used to manage in-app subscription purchases and verify
+your subscription status. Apple or Google pass RevenueCat a device/account
+identifier and your purchase information; no payment card details are
+included.
 </li>
 </ul>
 
