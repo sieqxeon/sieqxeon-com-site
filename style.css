@@ -230,10 +230,16 @@ section h2 {
 .app-links {
   margin-top: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
   font-size: 0.82rem;
+}
+
+.store-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .app-links a {
@@ -249,6 +255,37 @@ section h2 {
   color: var(--color-accent);
   background: var(--color-bg-alt);
   text-decoration: none;
+}
+
+.app-links a.store {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid transparent;
+  background: #111317;
+  color: #fff;
+  padding: 7px 16px 7px 12px;
+  font-weight: 600;
+}
+
+.app-links a.store svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.app-links a.store:hover {
+  background: #2a2d33;
+  border-color: transparent;
+  color: #fff;
+}
+
+.app-links a.store.googleplay {
+  background: #01875f;
+}
+
+.app-links a.store.googleplay:hover {
+  background: #019e6f;
 }
 
 .updates-list {
